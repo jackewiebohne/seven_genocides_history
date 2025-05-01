@@ -447,32 +447,29 @@ ul
   margin: 0.5em 0;
 }
 @media (max-width: 600px) {
+
+  /* Make the body take up more width on mobile, and less padding */
   body {
-    margin: 0;
-    padding: 0 0.8em;
     max-width: 100%;
+    padding: 0 1em; /* Add some padding to the sides */
   }
 
-  /* Normal paragraphs without inline styles */
+  /* Main text paragraphs (without .5in margin) */
   p.MsoNormal {
-    margin-left: 0 !important; /* Remove inline margins */
-    margin-right: 0 !important;
+    margin-left: 0 !important;   /* Remove any inline left margin */
+    margin-right: 0 !important;  /* Remove any inline right margin */
     line-height: 1.5;
     font-size: 1em;
+    width: 100%;  /* Ensure full use of available width */
   }
 
-  /* Targeting inline styles directly and removing their impact */
-  p.MsoNormal[style*="margin-left"] {
-    margin-left: 1em !important;  /* Adjust for mobile */
+  /* Adjust block citation paragraphs specifically (with .5in margin) */
+  p.MsoNormal[style*="margin-left:.5in"] {
+    margin-left: 1em !important; /* Reduce the indent */
     margin-right: 0 !important;
   }
 
-  /* Custom styling for block citations */
-  p.MsoNormal[style*="margin-left:.5in"] {
-    margin-left: 1em !important; /* Override the inline .5in margin */
-  }
 }
-
 </style>
 
 </head>
