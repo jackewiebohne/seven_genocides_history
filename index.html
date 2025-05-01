@@ -7417,6 +7417,20 @@ Bosnia and Herzegovina, 2022).</span></p>
       toc.style.display = toc.style.display === "block" ? "none" : "block";
     });
   </script>
+	<script>
+  if (window.innerWidth <= 600) {
+    document.querySelectorAll('p[style*="margin-left"]').forEach(p => {
+      p.style.marginLeft = '1em';
+      p.style.marginRight = '0';
+    });
+    document.querySelectorAll('p.MsoNormal').forEach(p => {
+      p.style.marginLeft = '0';
+      p.style.marginRight = '0';
+      p.style.lineHeight = '1.5';
+      p.style.fontSize = '1em';
+    });
+  }
+</script>
 </body>
 
 </html>
