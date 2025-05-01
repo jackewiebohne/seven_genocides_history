@@ -7431,25 +7431,7 @@ Bosnia and Herzegovina, 2022).</span></p>
     });
   </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  if (window.innerWidth <= 600) {
-    document.querySelectorAll('p.MsoNormal').forEach(p => {
-      const inlineStyle = p.getAttribute('style') || '';
-      const isIndented = /margin-left\s*:\s*0\.5in/i.test(inlineStyle); // Detects .5in
 
-      if (!isIndented) {
-        p.style.marginLeft = '0.5em';
-        p.style.marginRight = '0.5em';
-      }
-
-      p.style.maxWidth = '100%';
-      p.style.lineHeight = '1.5';
-      p.style.fontSize = '1em';
-    });
-  }
-});
-</script>
 
 </body>
 
