@@ -453,13 +453,24 @@ ul
     max-width: 100%;
   }
 
+  /* Normal paragraphs without inline styles */
   p.MsoNormal {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0 !important; /* Remove inline margins */
+    margin-right: 0 !important;
     line-height: 1.5;
     font-size: 1em;
   }
 
+  /* Targeting inline styles directly and removing their impact */
+  p.MsoNormal[style*="margin-left"] {
+    margin-left: 1em !important;  /* Adjust for mobile */
+    margin-right: 0 !important;
+  }
+
+  /* Custom styling for block citations */
+  p.MsoNormal[style*="margin-left:.5in"] {
+    margin-left: 1em !important; /* Override the inline .5in margin */
+  }
 }
 
 </style>
