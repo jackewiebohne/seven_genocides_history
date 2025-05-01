@@ -446,7 +446,6 @@ ul
   display: block;
   margin: 0.5em 0;
 }
-/* For mobile screens (max-width: 600px) */
 @media (max-width: 600px) {
 
   /* Make the body take up more width on mobile, and less padding */
@@ -466,10 +465,9 @@ ul
 
   /* Adjust block citation paragraphs specifically (with .5in margin) */
   p.MsoNormal[style*="margin-left:.5in"] {
-    margin-left: 0 !important; 
-    margin-right: 0 !important; 
+    margin-left: 0 !important; /* Remove the .5in margin for block citations */
+    margin-right: 0 !important; /* Remove right margin as well */
   }
-
 }
 </style>
 
