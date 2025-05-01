@@ -446,6 +446,7 @@ ul
   display: block;
   margin: 0.5em 0;
 }
+/* For mobile screens (max-width: 600px) */
 @media (max-width: 600px) {
 
   /* Make the body take up more width on mobile, and less padding */
@@ -456,8 +457,8 @@ ul
 
   /* Main text paragraphs (without .5in margin) */
   p.MsoNormal {
-    margin-left: 0 !important;   /* Remove any inline left margin */
-    margin-right: 0 !important;  /* Remove any inline right margin */
+    margin-left: 1em !important;  /* Add more margin on the left for main text */
+    margin-right: 1em !important; /* Add more margin on the right for main text */
     line-height: 1.5;
     font-size: 1em;
     width: 100%;  /* Ensure full use of available width */
@@ -465,8 +466,8 @@ ul
 
   /* Adjust block citation paragraphs specifically (with .5in margin) */
   p.MsoNormal[style*="margin-left:.5in"] {
-    margin-left: 1em !important; /* Reduce the indent */
-    margin-right: 0 !important;
+    margin-left: 0 !important; /* Remove the .5in margin for block citations */
+    margin-right: 0 !important; /* Remove right margin as well */
   }
 
 }
