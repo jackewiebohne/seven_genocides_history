@@ -7418,15 +7418,16 @@ Bosnia and Herzegovina, 2022).</span></p>
       toc.style.display = toc.style.display === "block" ? "none" : "block";
     });
   </script>
+
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   if (window.innerWidth <= 600) {
-    document.querySelectorAll('p').forEach(p => {
-      const marginLeft = parseFloat(window.getComputedStyle(p).marginLeft);
-      if (marginLeft < 30) { // Only override if not already significantly indented
+    document.querySelectorAll('p.MsoNormal').forEach(p => {
+      const computedMarginLeft = parseFloat(window.getComputedStyle(p).marginLeft);
+      if (computedMarginLeft < 20) {
         p.style.marginLeft = '0.5em';
+        p.style.marginRight = '0.5em';
       }
-      p.style.marginRight = '0.5em';
       p.style.maxWidth = '100%';
       p.style.lineHeight = '1.5';
       p.style.fontSize = '1em';
@@ -7434,6 +7435,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 </script>
+
 
 
 </body>
