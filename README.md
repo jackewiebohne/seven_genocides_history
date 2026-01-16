@@ -2,4 +2,4 @@
 
 A historical overview of genocides as a complement to my forthcoming book on perpetrators in genocide documentaries (Edinburgh UP).
 
-[webpage](https://github.com/jackewiebohne/seven_genocides_history.git)
+[webpage](https://jackewiebohne.github.io/seven_genocides_history/)
